@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.linear-gradient-background {
+  background-image: linear-gradient(
+    rgb(54, 103, 116),
+    rgba(9, 191, 236, 0.925)
+  );
+}
+
+body {
+  font-family: Verdana;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  color: #f2f2f2;
+}
+
+.nav {
+  float: right;
+  margin-top: 12px;
+  font-size: 18px;
+  overflow: hidden;
+  color: #f2f2f2;
+  padding: 28px;
+  position: static;
+}
+
+.nav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin-right: 30px;
+  padding: 18px 18px;
+  text-decoration-line: none;
+  box-shadow: 0 8px 8px 0 black;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header {
+  float: left;
+  font-size: 25px;
+  margin-left: 40px;
+  margin-top: 5px;
+  color: #f2f2f2;
+  text-align: center;
+  margin-right: 30px;
+  padding: 15px 15px;
+  text-decoration: none;
+  box-shadow: 0 8px 8px 0 black;
+}
+
+.header h1 {
+  float: left;
+  position: relative;
+}
+
+.header-color {
+  background-image: linear-gradient(rgb(54, 103, 116), rgb(10, 10, 10));
+  height: 150px;
+  max-width: 100%;
+}
+
+.hero {
+  height: 500px;
+  width: 100%;
+  background-image: url("../images/sippin.\ on\ coffee.jpg");
+  border-bottom: 2px solid black;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.page-wrapper {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  width: 95%;
+  margin-top: 15px;
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.content :hover {
+  background-color: rgb(54, 103, 116);
+}
+
+.content h1 {
+  font-size: 60px;
+  text-decoration-line: underline;
+}
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+img {
+  position: relative;
+  height: auto;
+  max-width: 100%;
+  size: 190px;
+  margin-left: 8px;
+  padding: 10px;
+  padding-right: 25px;
+  padding-bottom: 70px;
+}
+
+#about-me p {
+  color: #f2f2f2;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+#about-me {
+  display: inline-flex;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 16px 16px;
+  text-decoration: none;
+  box-shadow: 0 8px 8px 3px black;
+}
+
+#work {
+  display: block;
+  margin-bottom: 10px;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 16px 16px;
+  text-decoration: none;
+  box-shadow: 0 8px 8px 3px black;
+}
+
+h3 {
+  color: rgba(5, 0, 0, 0.986);
+}
+
+.flex-container {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#project1 {
+  max-width: 58vh;
+  margin: 0.5em;
+  margin-top: 15px;
+}
+
+#project2 {
+  max-width: 58vh;
+  margin: 0.5em;
+  margin-top: 15px;
+}
+
+#project3 {
+  max-width: 58vh;
+  margin: 0.5em;
+  margin-top: 15px;
+}
+
+.flex-item:hover {
+  background-color: rgba(0, 255, 255, 0.781);
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+}
+
+.resume-iframe {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#contact-me {
+  display: block;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 16px 16px;
+  text-decoration: none;
+  box-shadow: 0 8px 8px 3px black;
+  padding-bottom: 20px;
+}
+
+#contact-me a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+#contact-me a:hover {
+  color: rgb(28, 111, 219);
+}
+
+ul {
+  list-style: none;
+  flex-wrap: wrap;
+  font-size: 20px;
+  color: #f2f2f2;
+}
+
+.footer {
+  padding: 30px;
+  clear: both;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .resume-iframe {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item,
+  #project1,
+  #project2,
+  #project3 {
+    flex-basis: 100%;
+  }
+
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #work,
+  #contact-me,
+  #about-me {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content {
+    margin-left: 15px;
+  }
+}
